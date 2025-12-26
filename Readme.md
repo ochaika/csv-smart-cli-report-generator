@@ -1,68 +1,88 @@
-# CSV Smart CLI
+CSV Smart CLI Report Generator
 
-A simple command-line utility written in Python that analyzes CSV files
-and generates text reports.
+Python CLI tool for automatic CSV analysis and text report generation.
 
-## 🚀 Features
+This project provides a simple command-line interface (CLI) that reads a CSV file, analyzes its contents, and generates a clear, structured text report.
+Designed for automation tasks and easy customization for client-specific data.
 
-- Read CSV files with headers
-- Generate summary or full reports
-- Automatically creates output directories
-- Simple and clear CLI interface
+🔧 What the tool does
 
-## 📦 Project Structure
+Reads CSV files (e.g. exported from Excel)
 
-Project_3/
-├── app.py
-├── src/
-│ ├── init.py
-│ ├── loader.py
-│ └── report.py
-├── data/
-│ └── sample.csv
-├── outputs/
-│ └── report.txt
-└── README.md
+Analyzes rows and columns
+
+Generates a readable text report
+
+Saves the result to a file automatically
+
+👤 Who this is for
+
+Business analysts
+
+Managers
+
+Accountants
+
+Freelancers working with CSV / Excel data
+
+Anyone who needs quick data summaries without Excel macros
+
+📌 Example client task
+
+“I have a CSV file with business data.
+I need a short text report with key information.”
+
+➡️ This tool solves exactly that task.
+
+▶️ How to run
+python app.py data/sample.csv
+
+📄 Output
+
+After running the script, the report is generated here:
+
+outputs/full_report.txt
 
 
-## ⚙️ Requirements
+The file contains a structured summary based on the CSV data.
 
-- Python 3.9+
+🧠 Technologies used
 
-No external libraries are required.
+Python 3
 
-## ▶️ Usage
+Standard library (csv, argparse, pathlib)
 
-### Summary report (default)
+Command-line interface (CLI)
 
-```bash
-python app.py --input data/sample.csv
+No external dependencies required.
 
-Full report
-python app.py --input data/sample.csv --format full
+🚀 Freelance-ready features
 
-Custom output file
-python app.py --input data/sample.csv --format full --output outputs/full_report.txt
+Easy to adapt to different CSV formats
 
-Output Example
-CSV REPORT
-==========
-Rows count: 3
-Columns: name, score
+Can be extended with:
 
-What this project demonstrates
+Excel support
 
-Building CLI tools with argparse
+PDF reports
 
-Clean project structure
+Email sending
 
-Separation of logic and interface
+AI-based text analysis
 
-Working with real files and directories
+This makes the project suitable for real client work and automation tasks.
 
-Production-oriented Python code
+📂 Project structure
+csv-smart-cli-report-generator/
+├─ app.py
+├─ data/
+│  └─ sample.csv
+├─ outputs/
+│  └─ full_report.txt
+└─ README.md
 
-📌 Notes
+✅ Status
 
-This project is intended as a portfolio example demonstrating
-command-line application design and clean Python architecture.
+✔ Working
+✔ Ready for customization
+✔ Suitable for freelance portfolio
