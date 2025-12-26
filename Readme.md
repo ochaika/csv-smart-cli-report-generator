@@ -73,13 +73,19 @@ AI-based text analysis
 This makes the project suitable for real client work and automation tasks.
 
 📂 Project structure
+
 csv-smart-cli-report-generator/
 ├─ app.py
+├─ src/
+│  ├─ __init__.py
+│  ├─ loader.py
+│  └─ report.py
 ├─ data/
 │  └─ sample.csv
 ├─ outputs/
 │  └─ full_report.txt
 └─ README.md
+
 
 ✅ Status
 
